@@ -3,7 +3,8 @@ pipeline {
   stages {
     stage('error') {
       steps {
-        sh 'env'
+        sh '''env
+ls -lah'''
       }
     }
   }
